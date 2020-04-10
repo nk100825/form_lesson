@@ -1,1 +1,341 @@
 @charset "utf-8";
+
+body {
+  font-family: 'PT Sans', Helvetica, Arial, YuGothic, 'Kozuka Gothic std', sans-serif;
+}
+
+.main {
+  width: 100%;
+  background-color: #f2f6f7;
+  padding: 32px 0;
+}
+
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.heading {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 48px 64px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+}
+
+.heading-account {
+  font-size: 24px;
+  color: #545658;
+  text-align: center;
+}
+
+.start-button {
+  display: flex;
+  margin-top: 24px;
+}
+
+.btn {
+  width: 50%;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  transition: .3s;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.facebook {
+  color: #fff;
+  background-color: #3b5999;
+  width: 100%;
+  border: 1px solid #3b5999;
+}
+
+.google {
+  color: #f00;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+
+.btn-text {
+  color: #949697;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  color: #949697;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.account:before,
+.account:after {
+  border-top: 2px solid;
+  content: "";
+  flex-grow: 1;
+  color: #ececec;
+}
+
+.account-text {
+  padding: 0 10px;
+}
+
+.form-text{
+  display: flex;
+}
+
+.name-box {
+  width: 50%;
+  margin-left: 16px;
+}
+
+.name-box:first-child {
+  margin-left: 0;
+}
+
+.required {
+  color: #dd4b39;
+}
+
+.gender-text {
+  margin-bottom: 5px;
+}
+
+.gender-label {
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.gender-label input{
+  display: none;
+}
+
+.gender-label span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+  cursor: pointer;
+  color: #545658;
+}
+
+.gender-label:first-child {
+  margin-left: 0;
+}
+
+.gender-span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-input:checked + .gender-span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+.from-box {
+  position: relative;
+  width: 50%;
+}
+
+.from-text {
+  display: block;
+}
+
+.from-area  {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+.from-arrow {
+  margin-top: 5px;
+}
+
+.from-arrow::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  vertical-align: middle;
+}
+
+.from-none {
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
+}
+
+.box {
+  margin-top: 20px;
+}
+
+.text {
+  font-size: 12px;
+  color: #545658;
+}
+
+.area {
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  color: #545658;
+  outline: none;
+}
+
+.area:focus{
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.hopecourse {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.mycheckbox {
+  margin-bottom: 10px;
+}
+
+.mycheckbox input {
+  display: none;
+}
+
+.mycheckbox-label {
+color: #545658;
+}
+/* チェックボックスの代わりを成すラベル */
+.mycheckbox input + label {
+  position: relative;
+  padding-left: 25px;
+}
+/* ラベルの左に表示させる正方形のボックス□ */
+.mycheckbox input + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+/* チェックが入った時のレ点 */
+.mycheckbox input:checked + label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 18px;
+  height: 9px;
+  margin-top: -9px;
+  top: 50%;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color: #01bfbd;
+}
+
+.textarea {
+  resize: none;
+  height: 100px;
+}
+
+.terms-heading {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: center;
+  transition: .3s;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  width: 100%;
+}
+
+.terms-text {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.terms-btn {
+  color: #01a6a4;
+  cursor: pointer;
+}
+
+.terms-btn:hover {
+  text-decoration: underline;
+}
+
+.foot {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  background-color: #f2f6f7;
+  margin-bottom: 8px;
+}
+
+.foot-text {
+  margin-bottom: 8px;
+  line-height: 16px;
+}
+
+.foot-btn {
+  margin-bottom: 8px;
+}
