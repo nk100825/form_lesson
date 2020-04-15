@@ -328,6 +328,7 @@ color: #545658;
   border-radius: 3px;
   display: inline-block;
   width: 100%;
+  border: none;
 }
 
 .terms-text {
@@ -341,7 +342,6 @@ color: #545658;
   color: #01a6a4;
   cursor: pointer;
   line-height: 16px;
-  display: inline-block;
 }
 
 .terms-text-btn:hover {
@@ -362,10 +362,6 @@ color: #545658;
 }
 
 .foot-text {
-  margin-bottom: 8px;
   line-height: 16px;
-}
-
-.foot-btn {
   margin-bottom: 8px;
 }
