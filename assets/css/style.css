@@ -331,6 +331,16 @@ color: #545658;
   border: none;
 }
 
+.terms-heading:hover {
+  background-color: #01a6a4;
+}
+
+.terms-heading:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+}
+
 .terms-text {
   margin-top: 20px;
   font-size: 12px;

@@ -42,9 +42,18 @@
               <div class="gender-box box">
                 <p class="gender-text text">性別</p>
                 <div class="gender-icon">
-                  <label class="gender-label"><input class="gender-input" type="radio" name="gender" value="男性"><span class="gender-span">男性</span></label>
-                  <label class="gender-label"><input class="gender-input" type="radio" name="gender" value="女性"><span class="gender-span">女性</span></label>
-                  <label class="gender-label"><input class="gender-input" type="radio" name="gender" value="その他"><span class="gender-span">その他</span></label>
+                  <label class="gender-label">
+                    <input class="gender-input" type="radio" name="gender" value="男性">
+                    <span class="gender-span">男性</span>
+                  </label>
+                  <label class="gender-label">
+                    <input class="gender-input" type="radio" name="gender" value="女性">
+                    <span class="gender-span">女性</span>
+                  </label>
+                  <label class="gender-label">
+                    <input class="gender-input" type="radio" name="gender" value="その他">
+                    <span class="gender-span">その他</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -65,29 +74,29 @@
             </div>
             <div class="box">
               <p class="number-text text">電話番号</p>
-              <input type="password" class="number-area area" placeholder="ex) 09012345678">
+              <input type="tel" name="mobile-number" class="number-area area" placeholder="ex) 09012345678">
             </div>
             <div class="box">  
               <p class="text">パスワード<span class="required"> ※</span></p>
-              <input type="password" class="password-area area" required>
+              <input type="password" name="password" class="password-area area" required>
             </div>
             <div class="box">
               <p class="text">パスワード(確認用)<span class="required"> ※</span></p>
-              <input type="text" name="password" class="check-area area" required>
+              <input type="text" name="password-verification" class="check-area area" required>
             </div>
             <div class="box">
               <p class="hopecourse text">希望コース</p>
               <div class="mycheckbox">
-                <input id="check１" value="1" type="checkbox">
-                <label class="mycheckbox-label" for="check１">フロントエンド</label>
+                <input id="frontend" value="frontend" type="checkbox" name="course">
+                <label class="mycheckbox-label" for="frontend">フロントエンド</label>
               </div>
               <div class="mycheckbox">
-                <input id="check２" value="1" type="checkbox">
-                <label class="mycheckbox-label" for="check２">バックエンド</label>
+                <input id="backend" value="backend" type="checkbox" name="course">
+                <label class="mycheckbox-label" for="backend">バックエンド</label>
               </div>
               <div class="mycheckbox">
-                <input id="check３" value="1" type="checkbox">
-                <label class="mycheckbox-label" for="check３">アプリ</label>
+                <input id="app" value="app" type="checkbox" name="course">
+                <label class="mycheckbox-label" for="app">アプリ</label>
               </div>
             </div>
             <div class="box">
@@ -96,7 +105,7 @@
             </div>
             <div class="terms">
               <div class="box">
-                <input type="submit" value="アカウント作成" class="terms-heading"></input>
+                <input type="submit" value="アカウント作成" class="terms-heading from-none" name="account-sakusei"></input>
                   <p class="terms-text">
                     アカウントを作成することにより、<a class="terms-text-btn" href="#">利用規約</a>と<a class="terms-text-btn" href="#">プライバシーポリシー</a>に同意するものとします。
                   </p>
